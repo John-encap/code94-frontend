@@ -15,7 +15,7 @@ const ProductFav = () => {
   return (
     <Layout title={'FAVOURITE PRODUCTS'}>
       <ToolBar></ToolBar>
-      <Table>
+      <Table marginT={'mt-8'}>
         <TableHeader/>
         <TableBody>
           <ProductCard/>
