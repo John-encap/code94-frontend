@@ -15,7 +15,7 @@ const ProductHome = () => {
   return (
     <Layout title={"PRODUCTS"}>
       <ToolBar></ToolBar>
-      <Table>
+      <Table marginT={'mt-8'}>
         <TableHeader/>
         <TableBody>
           <ProductCard/>
