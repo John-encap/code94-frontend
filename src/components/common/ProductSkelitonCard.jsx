@@ -1,8 +1,4 @@
 import React from 'react';
-import { AiFillStar , AiOutlineSearch , AiOutlineStar } from "react-icons/ai";
-import { BsPencilFill } from "react-icons/bs";
-import { RiDeleteBin7Fill } from "react-icons/ri";
-import profile from '../../images/profile.jpg'
 
 const ProductSkelitonCard = ()=>{
     return(    

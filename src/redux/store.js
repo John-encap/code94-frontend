@@ -1,22 +1,12 @@
-import { configureStore } from '@reduxjs/toolkit';
-import { persistedReducer } from './persistConfig';
-import {
-    FLUSH,
-    REHYDRATE,
-    PAUSE,
-    PERSIST,
-    PURGE,
-    REGISTER,
-  } from 'redux-persist'
+import { configureStore } from "@reduxjs/toolkit";
+import userSlice from './slices/userSlice';
+import favSlice from "./slices/favSlice";
 
 const store = configureStore({
-  reducer: persistedReducer,
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({
-      serializableCheck: {
-        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-      },
-    }),
+  reducer: {
+    auth:userSlice,
+    fav: favSlice,
+  },
 });
 
-export default store;
+export default store;
